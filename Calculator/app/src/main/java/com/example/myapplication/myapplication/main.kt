@@ -1,5 +1,10 @@
-package com.example.myapplication.main
+package com.example.myapplication.main.MainKt
 
+import com.example.myapplication.main.AddOperation
+import com.example.myapplication.main.Calculator
+import com.example.myapplication.main.DivideOperation
+import com.example.myapplication.main.MultiplyOperation
+import com.example.myapplication.main.SubstractOperation
 import java.util.Calendar
 import kotlin.reflect.typeOf
 
@@ -34,19 +39,23 @@ fun main() {
 
         when (operator) {
             "+" -> {
-                AddOperation()
+                val addCalc = Calculator(AddOperation()).operation(a, b)
+                println("${a} + ${b} = ${addCalc}")
             }
 
             "-" -> {
-                DivideOperation()
+               val divCalc = Calculator(DivideOperation()).operation(a, b)
+                println("${a} + ${b} = ${divCalc}")
             }
 
             "*" -> {
-                MultiplyOperation()
+                val mulCalc = Calculator(MultiplyOperation()).operation(a, b)
+                println("${a} + ${b} = ${mulCalc}")
             }
 
             "/" -> {
-                SubstractOperation()
+                val subCalc = Calculator(SubstractOperation()).operation(a, b)
+                println("${a} + ${b} = ${subCalc}")
             }
 
             else -> {
@@ -55,15 +64,15 @@ fun main() {
             }
         }
 
-        if (operator == "+"){
-            println("${a} + ${b} = ${AddOperation().operate(a, b)}")
-        } else if (operator == "-") {
-            println("${a} - ${b} = ${DivideOperation().operate(a, b)}")
-        } else if (operator == "*") {
-            println("${a} * ${b} = ${MultiplyOperation().operate(a, b)}")
-        } else if (operator == "/") {
-            println("${a} / ${b} = ${SubstractOperation().operate(a, b)}")
-        }
+//        if (operator == "+"){
+//            println("${a} + ${b} = ${AddOperation().operate(a, b)}")
+//        } else if (operator == "-") {
+//            println("${a} - ${b} = ${DivideOperation().operate(a, b)}")
+//        } else if (operator == "*") {
+//            println("${a} * ${b} = ${MultiplyOperation().operate(a, b)}")
+//        } else if (operator == "/") {
+//            println("${a} / ${b} = ${SubstractOperation().operate(a, b)}")
+//        }
 
         println("계산기를 그만 종료하시겠습니까? 아무버튼 = 계속, 2 = 종료")
         var e = readLine()!!.toInt()
@@ -73,7 +82,6 @@ fun main() {
         } else continue
     }
 }
-
 
 
 
