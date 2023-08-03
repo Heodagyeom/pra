@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tv_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:singleLine="true"
+        android:text="Width=Match parent외계어작성시작ㅁㄴㅇㄹㅇㄴㅇㄹ아녕하세요"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Width=Wrap content외계     ㄴ얄주ㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹㅏㅣㄹ나ㅣㅇㄹ"
+        android:textStyle="normal"
+        android:background="@color/white"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/tv_text3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Width=100dp"
+        android:textStyle="italic"
+        android:typeface="normal"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv_text4"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text="Width=100px"
+        android:typeface="monospace"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv_text5"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:text="Width=1in"
+        android:typeface="sans"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_text6"
+        android:layout_width="10mm"
+        android:layout_height="wrap_content"
+        android:text="Width=10mm"
+        android:typeface="serif" />
+
+
+</LinearLayout>
