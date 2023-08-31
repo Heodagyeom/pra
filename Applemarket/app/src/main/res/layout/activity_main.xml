@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/main_bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="내배캠동"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/cl_main_bar"
+            app:layout_constraintStart_toStartOf="@id/cl_main_bar"
+            app:layout_constraintTop_toTopOf="@id/cl_main_bar" />
+
+        <ImageView
+            android:id="@+id/main_bar_down"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/img_down"
+            app:layout_constraintBottom_toBottomOf="@id/cl_main_bar"
+            app:layout_constraintStart_toEndOf="@+id/main_bar_name"
+            app:layout_constraintTop_toTopOf="@id/cl_main_bar" />
+
+        <ImageView
+            android:id="@+id/main_bar_bell"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/img_bell"
+            app:layout_constraintBottom_toBottomOf="@id/cl_main_bar"
+            app:layout_constraintEnd_toEndOf="@id/cl_main_bar"
+            app:layout_constraintTop_toTopOf="@id/cl_main_bar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/recyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_main_bar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
