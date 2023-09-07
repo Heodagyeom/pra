@@ -52,9 +52,9 @@ class MainActivity : AppCompatActivity() {
         binding.apply{
             btnMainFrag1.setOnClickListener{
                 setFragment(TitleFragment())
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.frameLayout, fragment)
-                    .commit()
+//                supportFragmentManager.beginTransaction()
+//                    .replace(R.id.frameLayout, fragment)
+//                    .commit()
             }
             btnMainFrag2.setOnClickListener{
                 setFragment(DetailFragment())
