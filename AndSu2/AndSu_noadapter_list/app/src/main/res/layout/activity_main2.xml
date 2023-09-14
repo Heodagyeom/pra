@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!-- android:columnWidth="100dp" 그리드 항목 하나의 폭-->
+    <!-- android:numColumns="auto_fit" 열의 폭과 화면 폭을 바탕으로 자동 게산-->
+    <!-- android:verticalSpacing="10dp" 항목간의 세로 간격-->
+    <!-- android:stretchMode="columnWidth" 열 내부의 여백을 폭에 맞게 채움-->

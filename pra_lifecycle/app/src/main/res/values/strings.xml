@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">praLifeCycle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hiFragment">난 프래그먼트 화면이야</string>
+    <string name="goSecondActivity">go to Second Activity</string>
+    <string name="showfragment">Show Fragment</string>
+</resources>
