@@ -35,4 +35,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-// 코끼리 app 에 47번째줄을 추가했다.
+// 코끼리 app 에 47번째줄을 추가
+//
+//
+//
+// 했다.
